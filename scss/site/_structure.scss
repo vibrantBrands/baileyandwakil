@@ -28,13 +28,13 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 42px;
-  line-height: 50px;
+  font-size: $h1-size;
+  line-height: $h1-line-height;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: $h2-size;
   line-height: 24px;
 }
 
@@ -163,7 +163,7 @@ header {
 
 }
 
-nav {
+nav.main-menu {
     background: $color-medium-blue;
     align-items: center;
     display: flex;

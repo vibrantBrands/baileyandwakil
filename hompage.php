@@ -36,9 +36,9 @@
       </div>
     </div>
     <div class="doctorImg">
-      <img src="<?php echo $this->getThemePath(); ?>/images/doctor3.png" alt="">
-      <img src="<?php echo $this->getThemePath(); ?>/images/doctor3.png" alt="">
-      <img src="<?php echo $this->getThemePath(); ?>/images/doctor3.png" alt="">
+      <img src="<?php echo $this->getThemePath(); ?>/images/doctor-stock.png" alt="">
+      <img src="<?php echo $this->getThemePath(); ?>/images/doctor-stock.png" alt="">
+      <img src="<?php echo $this->getThemePath(); ?>/images/doctor-stock.png" alt="">
     </div>
   </section>
 

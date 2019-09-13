@@ -31,7 +31,7 @@
 		<header>
 			<div class="logo">
 				<a href="/">
-					<img src="<?php echo $this->getThemePath(); ?>/images/logo.png" alt="logo">
+					<img src="<?php echo $this->getThemePath(); ?>/images/logo_internal.png" alt="logo">
 				</a>
 			</div>
 
@@ -47,7 +47,7 @@
 		     </div>
 
 		     <!-- navigation --> 
-			<nav class="inactive">
+			<nav class="main-menu inactive">
 				<a href="/">Our Doctors</a>
 				<a href="/">Testing</a>
 				<a href="/">Diseases & Surgery</a>
