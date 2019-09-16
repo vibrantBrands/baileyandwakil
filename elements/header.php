@@ -48,11 +48,11 @@
 
 		     <!-- navigation --> 
 			<nav class="main-menu">
-				<a href="/">Our Doctors</a>
-				<a href="/">Testing</a>
-				<a href="/">Diseases & Surgery</a>
-				<a href="/">Locations</a>
-				<a href="/">Patient Portal</a>
+				<a href="/our-doctors">Our Doctors</a>
+				<a href="/testing">Testing</a>
+				<a href="/diseases-surgery">Diseases & Surgery</a>
+				<a href="/locations">Locations</a>
+				<a href="/patient-portal">Patient Portal</a>
 				<a href="/">
 					<button class="yellow">Contact Us</button>
 				</a>
