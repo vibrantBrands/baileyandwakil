@@ -1,4 +1,4 @@
-/* HOMEPAGE STYLES */
+/* STYLES fOR INTERNAL PAGES and OUR DOCTORS */
 
 .internal_wrapper {
 
@@ -32,19 +32,48 @@
     padding: 80px 0;
   }
 
+  .drs-bg {
+    width: 100%;
+    background-image: url('../images/internal-bg.png');
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 200px;
+  }
+
+  .drs-bios {
+    max-width: $content-max-width;
+
+    >div {
+      display: none;
+    }
+  }
+
+  .doctor-pictures {
+    margin-top: 20px;
+
+    >div {
+      cursor: pointer;
+
+       * {
+        pointer-events: none;
+       }
+    }
+  }
+
   .image-row {
-      background-image: url('../images/internal-bg.png');
-      background-position: 0 100px;
-      background-repeat: no-repeat;
-      background-size: cover;
+      align-items: center;
       display: flex;
       justify-content: center;
-      padding-bottom: 200px;
+      //padding-bottom: 200px;
       text-align: center;
 
+      @include flex-col-layout();
+
       >div {
+        margin: 10px 20px;
+        max-width: 376px;
         position: relative;
-        margin: 0 20px;
 
         &:hover {
           

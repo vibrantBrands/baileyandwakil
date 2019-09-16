@@ -164,40 +164,39 @@ header {
 }
 
 nav.main-menu {
-    background: $color-medium-blue;
     align-items: center;
     display: flex;
     font-size: $nav-text-size;
     font-weight: 700;
     justify-content: center;
     text-align: right;
-    width: 100%;
-    height: 100vh;
     z-index: 3;
-    transition: all .3s linear;
+    //transition: all .3s linear;
 
     @media screen and (max-width: $lg-breakpoint){
+      background: $color-medium-blue;
       position: fixed;
       padding-top: 80px;
       align-items: flex-end;
       justify-content: flex-start;
-      max-height: 0;
-      opacity: 0;
+      display: none;
+      width: 100%;
+      height: 100vh;
     }
 
     @include flex-col-layout;
 
     &.active {
-      max-height: 100%;
-      opacity: 1;
+      //max-height: 100%;
+      //opacity: 1;
     }
 
     &.inactive {
-      max-height: 0px;
+      //max-height: 0px;
       
-      @media screen and (max-width: $lg-breakpoint){
+      /*@media screen and (max-width: $lg-breakpoint){
         opacity: 0;
-      }
+      }*/
     }
 
     a {

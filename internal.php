@@ -29,31 +29,4 @@
 		?>
 </section>
 
-<section class="image-row">
-    <div>
-    	<img src='<?php echo $this->getThemePath() ?>/images/doctor1.png' />
-    	<div class="info">
-    		<h3>Doctor Name</h3>
-	    	<p>MD. FACS</p>
-	    	<i class="fas fa-plus-circle"></i>
-    	</div>
-    </div>
-    <div>
-    	<img src='<?php echo $this->getThemePath() ?>/images/doctor2.png' />
-    	<div class="info">
-    		<h3>Doctor Name</h3>
-	    	<p>MD. FACS</p>
-	    	<i class="fas fa-plus-circle"></i>
-    	</div>
-    </div>
-    <div>
-    	<img src='<?php echo $this->getThemePath() ?>/images/doctor3.png' />
-    	<div class="info">
-    		<h3>Doctor Name</h3>
-	    	<p>MD. FACS</p>
-	    	<i class="fas fa-plus-circle"></i>
-    	</div>
-    </div>
-</section>
-
 <?php require('elements/footer.php'); ?>

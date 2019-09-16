@@ -3,8 +3,8 @@ $(document).ready(() => {
     $('.menu-toggle').click(function(){
         $(this).toggleClass('active');
         $(this).toggleClass('inactive');
-        $('nav').toggleClass('active');
-        $('nav').toggleClass('inactive');
+        $('.main-menu').toggle();
+        //$('nav').toggleClass('inactive');
         $('body').toggleClass('menu-open');
     });
 
@@ -38,5 +38,11 @@ $(document).ready(() => {
             // settings: "unslick"
             // instead of a settings object
           ]
+    });
+
+    $('.doctor-pictures div').click(function(e){
+        var index = $(e.target).index();
+        $('.dr-bio').hide(500);
+        $('.dr-bio').eq(index).show(500);
     });
 });

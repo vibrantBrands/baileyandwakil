@@ -3916,36 +3916,30 @@ header {
         top: 80%; }
 
 nav.main-menu {
-  background: #428ade;
   align-items: center;
   display: flex;
   font-size: 16px;
   font-weight: 700;
   justify-content: center;
   text-align: right;
-  width: 100%;
-  height: 100vh;
-  z-index: 3;
-  transition: all .3s linear; }
+  z-index: 3; }
   @media screen and (max-width: 992px) {
     nav.main-menu {
+      background: #428ade;
       position: fixed;
       padding-top: 80px;
       align-items: flex-end;
       justify-content: flex-start;
-      max-height: 0;
-      opacity: 0; } }
+      display: none;
+      width: 100%;
+      height: 100vh; } }
   @media screen and (max-width: 992px) {
     nav.main-menu {
       flex-direction: column; } }
-  nav.main-menu.active {
-    max-height: 100%;
-    opacity: 1; }
   nav.main-menu.inactive {
-    max-height: 0px; }
-    @media screen and (max-width: 992px) {
-      nav.main-menu.inactive {
-        opacity: 0; } }
+    /*@media screen and (max-width: $lg-breakpoint){
+        opacity: 0;
+      }*/ }
   nav.main-menu a {
     color: #3a3a3a;
     display: flex;
@@ -4106,10 +4100,12 @@ footer {
     justify-content: center;
     min-height: 347px;
     position: relative; }
-    .qualitySect .doctorImg img:nth-child(2) {
-      z-index: 2; }
-    .qualitySect .doctorImg img:nth-child(2), .qualitySect .doctorImg img:nth-child(3) {
-      margin-left: -100px; }
+    .qualitySect .doctorImg img {
+      align-self: center; }
+      .qualitySect .doctorImg img:nth-child(2) {
+        z-index: 2; }
+      .qualitySect .doctorImg img:nth-child(2), .qualitySect .doctorImg img:nth-child(3) {
+        margin-left: -100px; }
   .qualitySect .grid-container {
     display: flex;
     justify-content: space-between;
@@ -4177,7 +4173,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat; }
 
-/* HOMEPAGE STYLES */
+/* STYLES fOR INTERNAL PAGES and OUR DOCTORS */
 .internal_wrapper .internal_heading {
   min-height: 500px; }
   .internal_wrapper .internal_heading .header_image {
@@ -4198,18 +4194,38 @@ footer {
   max-width: 1100px;
   padding: 80px 0; }
 
-.internal_wrapper .image-row {
+.internal_wrapper .drs-bg {
+  width: 100%;
   background-image: url("../images/internal-bg.png");
-  background-position: 0 100px;
+  background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  padding-bottom: 200px; }
+
+.internal_wrapper .drs-bios {
+  max-width: 1100px; }
+  .internal_wrapper .drs-bios > div {
+    display: none; }
+
+.internal_wrapper .doctor-pictures {
+  margin-top: 20px; }
+  .internal_wrapper .doctor-pictures > div {
+    cursor: pointer; }
+    .internal_wrapper .doctor-pictures > div * {
+      pointer-events: none; }
+
+.internal_wrapper .image-row {
+  align-items: center;
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
   text-align: center; }
+  @media screen and (max-width: 992px) {
+    .internal_wrapper .image-row {
+      flex-direction: column; } }
   .internal_wrapper .image-row > div {
-    position: relative;
-    margin: 0 20px; }
+    margin: 10px 20px;
+    max-width: 376px;
+    position: relative; }
     .internal_wrapper .image-row > div:hover .info {
       opacity: 1; }
   .internal_wrapper .image-row .info {

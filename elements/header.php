@@ -47,7 +47,7 @@
 		     </div>
 
 		     <!-- navigation --> 
-			<nav class="main-menu inactive">
+			<nav class="main-menu">
 				<a href="/">Our Doctors</a>
 				<a href="/">Testing</a>
 				<a href="/">Diseases & Surgery</a>
