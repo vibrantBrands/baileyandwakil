@@ -23,12 +23,13 @@
 </section>
 
 <div class="drs-bg">
+  <p class="click-below"><strong>Click on doctor's picture to see their bio.</strong></p>
 
   <section class="image-row doctor-pictures">
     <div>
       <img src='<?php echo $this->getThemePath() ?>/images/doctor1.png' />
       <div class="info">
-        <h3>Doctor Name</h3>
+        <h3>Thomas Bailey</h3>
         <p>MD. FACS</p>
         <i class="fas fa-plus-circle"></i>
       </div>
@@ -36,7 +37,7 @@
     <div>
       <img src='<?php echo $this->getThemePath() ?>/images/doctor2.png' />
       <div class="info">
-        <h3>Doctor Name</h3>
+        <h3>Aida Walki</h3>
         <p>MD. FACS</p>
         <i class="fas fa-plus-circle"></i>
       </div>
@@ -44,8 +45,8 @@
     <div>
       <img src='<?php echo $this->getThemePath() ?>/images/doctor3.png' />
       <div class="info">
-        <h3>Doctor Name</h3>
-        <p>MD. FACS</p>
+        <h3>David E. Auringer</h3>
+        <p>MD</p>
         <i class="fas fa-plus-circle"></i>
       </div>
     </div>
