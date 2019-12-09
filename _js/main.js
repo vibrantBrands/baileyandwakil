@@ -3,8 +3,7 @@ $(document).ready(() => {
     $('.menu-toggle').click(function(){
         $(this).toggleClass('active');
         $(this).toggleClass('inactive');
-        $('.main-menu').toggle();
-        //$('nav').toggleClass('inactive');
+        $('.nav').toggle(); 
         $('body').toggleClass('menu-open');
     });
 
@@ -25,7 +24,7 @@ $(document).ready(() => {
         slidesToShow: 3,
         slidesToScroll: 1,
         cssEase: "ease",
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
         responsive: [
             {
               breakpoint: 700,
@@ -40,9 +39,9 @@ $(document).ready(() => {
           ]
     });
 
-    $('.doctor-pictures div').click(function(e){
+    /*$('.doctor-pictures div').click(function(e){
         var index = $(e.target).index();
         $('.dr-bio').hide(500);
         $('.dr-bio').eq(index).show(500);
-    });
+    });*/
 });

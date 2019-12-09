@@ -1,0 +1,13 @@
+.wufoo input.btTxt {
+  background: #428ade;
+  border-radius: 250px;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  height: 45px;
+  text-align: center;
+  width: 175px; }
+  button.yellow {
+    background: #ffb232; }
+    button.yellow:focus {
+      outline: none; }

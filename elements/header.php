@@ -31,7 +31,7 @@
 		<header>
 			<div class="logo">
 				<a href="/">
-					<img src="<?php echo $this->getThemePath(); ?>/images/logo_internal.png" alt="logo">
+					<img src="<?php echo $this->getThemePath(); ?>/images/logo.png" alt="logo">
 				</a>
 			</div>
 
@@ -47,16 +47,26 @@
 		     </div>
 
 		     <!-- navigation --> 
-			<nav class="main-menu">
-				<a href="/our-doctors">Our Doctors</a>
-				<a href="/testing">Testing</a>
-				<a href="/diseases-surgery">Diseases & Surgery</a>
-				<a href="/locations">Locations</a>
-				<a href="/patient-portal">Patient Portal</a>
-				<a href="/">
-					<button class="yellow">Contact Us</button>
-				</a>
-			</nav>
+			<div class="main-menu">
+				<div class="top-ctas">
+					<a href="tel:5184526002" class="phone"><i class="fa fa-phone"></i>(518) 452-6002</a>
+					<a href="/contact"><button class="yellow">Contact Us</button></a>
+				</div>
+				
+				<?php
+		          $bt = BlockType::getByHandle('autonav');
+		          $bt->controller->displayPages = 'top'; // 'top', 'above', 'below', 'second_level', 'third_level', 'custom', 'current'
+		          $bt->controller->displayPagesCID = ''; // if display pages is set ‘custom’
+		          $bt->controller->orderBy = 'display_asc';  // 'chrono_desc', 'chrono_asc', 'alpha_asc', 'alpha_desc', 'display_desc','display_asc'             
+		          $bt->controller->displaySubPages = 'all';  //none', 'all, 'relevant_breadcrumb', 'relevant'          
+		          $bt->controller->displaySubPageLevels = 'all'; // 'enough', 'enough_plus1', 'all', 'custom'
+		          $bt->controller->displaySubPageLevelsNum = '0'; // if displaySubPages is set 'custom'
+		          $bt->controller->outputAutoHeaderItems();
+		          $bt->render('templates/internal_sidebar'); // for template 'templates/template_name';
+		        ?>
+
+			</div>
+			
 		</header>
 
 		<!-- PLEASE REMOVE THIS SECTION BEFORE LAUNCH -- Just placeholder for some useful C5 elements
