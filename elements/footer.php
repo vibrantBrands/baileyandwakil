@@ -13,8 +13,11 @@
     </div>
 
     <div>
-      <!-- <h3>SOCIAL</h3>
-      <a href="https://www.facebook.com/pages/Bailey-Filipp-Wakil-Eye-Physicians-Surgeons-Pllc/134213366630228"><i class="fab fa-facebook"></i></a>  -->
+      <h3>Links</h3>
+      <a href="/our-doctors">Our Doctors</a><br />
+      <a href="/our-specialties">Our Specialties</a><br />
+      <a href="/eye-surgery">Eye Surgery</a><br />
+      <a href="/patient-forms">Patient Forms</a>
     </div>
   </footer>
 <?php Loader::element('footer_required');?>

@@ -56,11 +56,26 @@
     background-size: 100%;
     padding-bottom: 200px;
 
+    h2 {
+      margin: 0;
+    }
+
+    h3, h4 {
+      margin: 8px 0 20px 2px;
+    }
+
     .container {
       margin: 0 auto;
       max-width: $content-max-width;
       padding: 30px;
       text-align: center;
+
+      img {
+        @media screen and (max-width: $md-breakpoint){
+          height: auto;
+          width: 85%;
+        }
+      }
     }
 
     .click-below {
@@ -178,6 +193,7 @@
       }
 
       @media screen and (max-width: $lg-breakpoint){
+        display: none;
         float: none;
         margin-top: 50px;
         width: 100%;
@@ -217,7 +233,6 @@
 
       @media screen and (max-width: $lg-breakpoint){
         border-left: 0;
-        border-bottom: black 1px solid;
         float: none;
         padding: 0 30px;
         width: 100%;

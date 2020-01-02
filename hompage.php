@@ -6,7 +6,9 @@
       $a = new Area("Hero Slider");
       $a->display();
       ?>
-    
+      <div class="mobile-contact">
+        <a href="tel:5184526003">Contact Us: (518) 452-6003</a>
+      </div>
   </section>
 
   <section class="qualitySect">
@@ -16,7 +18,7 @@
       ?>
     <div class="grid-container">
       <div class="grid-item">
-        <a href="/conditions">
+        <a href="/our-specialties">
           <img src="<?php echo $this->getThemePath(); ?>/images/conditions.png" alt="Conditions">
         </a>
       </div>
@@ -54,7 +56,7 @@
     </div>
   </section>
 
-  <section class="services">
+  <!-- <section class="services">
     <h2>Our Services</h2>
     <div class="carousel">
       <img src="<?php echo $this->getThemePath(); ?>/images/lasik.png" alt="Lasik">
@@ -62,7 +64,7 @@
       <img src="<?php echo $this->getThemePath(); ?>/images/lenses.png" alt="Intraocular Lenses">
       <img src="<?php echo $this->getThemePath(); ?>/images/cataract-surgery-slider.jpg" alt="Cataract Surgery">
     </div>
-  </section>
+  </section> -->
 
 <!-- end main content wrapper -->
 </div>

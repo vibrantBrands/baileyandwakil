@@ -20,13 +20,17 @@
        <?php endif; ?>
 
        <h1 class="page-title"><?php echo $title; ?></h1>
+       <div class="mobile-contact">
+          <a href="tel:5184526003">Contact Us: (518) 452-6003</a>
+      </div>
 </section>
 
 <div class="drs-bg">
   <div class="container">
-      <p>
-        For more than three decades, individuals throughout Albany and surrounding New York areas have trusted our eye care center for their vision needs. Visit Bailey, Wakil & Auringer Eye Physicians & Surgeons PLLC for the best in cutting-edge procedures and personalized care.
-      </p>
+      <?php
+        $a = new Area("Center Text");
+        $a->display();
+      ?>
       <?php
       $a = new Area("Doctor Bios");
       $a->display();

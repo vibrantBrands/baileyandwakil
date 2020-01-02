@@ -20,10 +20,15 @@
        <?php endif; ?>
 
        <h1 class="page-title"><?php echo $title; ?></h1>
+       
 </section>
 
+<div class="mobile-contact">
+    <a href="tel:5184526003">Contact Us: (518) 452-6003</a>
+</div>
 
 <section class="internal_content_wrapper">
+
 
   <div class="internal_content_container content">
     <?php

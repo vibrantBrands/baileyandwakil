@@ -11,3 +11,7 @@
     background: #ffb232; }
     button.yellow:focus {
       outline: none; }
+
+#header {
+  display: none;
+}

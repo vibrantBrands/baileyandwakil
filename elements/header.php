@@ -50,7 +50,7 @@
 			<div class="main-menu">
 				<div class="top-ctas">
 					<a href="tel:5184526002" class="phone"><i class="fa fa-phone"></i>(518) 452-6002</a>
-					<a href="/contact"><button class="yellow">Contact Us</button></a>
+					<a href="/contact-us"><button class="yellow">Contact Us</button></a>
 				</div>
 				
 				<?php
