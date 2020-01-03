@@ -4105,7 +4105,9 @@ footer {
   background: #ffb232;
   color: white;
   display: flex;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;
+  font-weight: bold;
   justify-content: center;
   padding: 2px 0 14px;
   text-transform: uppercase;
