@@ -3866,7 +3866,7 @@ header {
       width: 100%; }
     @media screen and (max-width: 992px) {
       header .logo {
-        margin: 0;
+        margin: 5px 0 0;
         position: absolute;
         left: 10px;
         width: 250px; } }
@@ -3876,7 +3876,7 @@ header {
     width: 22px;
     height: 26px;
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 30px;
     z-index: 5; }
     header .toggle-wrapper p {
@@ -3893,9 +3893,10 @@ header {
       height: 22px;
       position: absolute; }
     header .menu-toggle .bar {
-      background: #428ade;
+      border: 2px solid #214ab3;
+      border-radius: 8px;
       display: block;
-      height: 2px;
+      height: 1px;
       position: absolute;
       width: 30px;
       top: 10%; }
@@ -3920,17 +3921,17 @@ header {
                 transform: rotate(45deg);
         top: 50%; }
     header .menu-toggle.inactive .bar {
-      background: #3a3a3a;
+      background: #214ab3;
       transition: all 0.3s ease-out; }
       header .menu-toggle.inactive .bar:first-child {
-        background: #3a3a3a;
+        background: #214ab3;
         -webkit-transform: rotate(0);
                 transform: rotate(0);
         top: 20%; }
       header .menu-toggle.inactive .bar:nth-child(2) {
         opacity: 1; }
       header .menu-toggle.inactive .bar:nth-child(3) {
-        background: #3a3a3a;
+        background: #214ab3;
         -webkit-transform: rotate(0);
                 transform: rotate(0);
         top: 80%; }
@@ -3965,7 +3966,7 @@ header {
     font-size: 16px;
     font-weight: 700;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 69px;
     padding: 0;
     text-align: right; }
     @media screen and (max-width: 992px) {
@@ -3996,15 +3997,7 @@ header {
         outline: none; }
       @media screen and (max-width: 1200px) {
         .main-menu .nav a {
-          text-align: center;
-          /*&:after {
-            background: black;
-            content:'';
-            display: block;
-            height: 30px;
-            margin-left: 5px;
-            width: 1px;
-          }*/ } }
+          text-align: center; } }
       @media screen and (max-width: 992px) {
         .main-menu .nav a {
           align-items: center;
@@ -4137,7 +4130,7 @@ footer {
     @media screen and (max-width: 992px) {
       .topHeading h2 {
         font-size: 2em;
-        padding-top: 50px;
+        padding-top: 120px;
         color: #ffffff;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); } }
     @media screen and (max-width: 768px) {
@@ -4145,8 +4138,11 @@ footer {
         font-size: 1.7em;
         color: #ffffff;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        padding-top: 40px;
-        width: 80%; } }
+        padding-top: 90px;
+        width: 50%; } }
+    @media screen and (max-width: 576px) {
+      .topHeading h2 {
+        padding-top: 20px; } }
   .topHeading h3 {
     color: #3a3a3a;
     font-family: 'Open Sans', sans-serif;
@@ -4220,12 +4216,12 @@ footer {
   .qualitySect .grid-container {
     display: flex;
     justify-content: center;
-    margin: 50px auto; }
+    margin: 20px auto; }
     @media screen and (max-width: 768px) {
       .qualitySect .grid-container {
         flex-direction: column; } }
     .qualitySect .grid-container > div {
-      margin: 30px 5% 0; }
+      margin: 60px 5% 0; }
 
 .dignitySect {
   background-image: url("../images/group-1_3.jpg");

@@ -43,7 +43,6 @@
 		          <div class="bar"></div>
 		          <span class="bg"></span>
 		        </div>
-		        <p>MENU</p>
 		     </div>
 
 		     <!-- navigation --> 

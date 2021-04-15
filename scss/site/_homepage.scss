@@ -20,7 +20,7 @@
 
     @media screen and (max-width: $lg-breakpoint){
       font-size: 2em;
-      padding-top: 50px;
+      padding-top: 120px;
       color: $color-white;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     }
@@ -29,8 +29,12 @@
       font-size: 1.7em;
       color: $color-white;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-      padding-top: 40px;
-      width: 80%;
+      padding-top: 90px;
+      width: 50%;
+    }
+
+    @media screen and (max-width: $sm-breakpoint){
+      padding-top: 20px;
     }
   }
 
@@ -144,12 +148,12 @@
   .grid-container{
     display: flex;
     justify-content: center;
-    margin: 50px auto;
+    margin: 20px auto;
 
     @include flex-col-layout($md-breakpoint);
     
     >div {
-      margin: 30px 5% 0;
+      margin: 60px 5% 0;
     }
   }
 }
